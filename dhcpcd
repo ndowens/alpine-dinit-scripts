@@ -1,0 +1,7 @@
+# Example dhcpcd script.
+
+type = process
+command = /bin/busybox udhcpc -f
+logfile = /var/log/dhcpcd-service.log
+restart = false
+depends-on = rcboot

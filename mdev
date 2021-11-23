@@ -1,0 +1,5 @@
+type = scripted
+command = /sbin/mdev -s
+logfile = /run/mdev-s.log
+restart = false
+depends-on = early-filesystems

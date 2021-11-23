@@ -1,0 +1,11 @@
+type = process
+command = /sbin/agetty tty6 linux-c
+#command = /sbin/agetty tty6 linux-c -n -l /bin/sh
+restart = true
+depends-on = loginready
+termsignal = HUP
+smooth-recovery = true
+#options = no-sigterm
+#stop-timeout = 0
+inittab-id = 6
+inittab-line = tty6
