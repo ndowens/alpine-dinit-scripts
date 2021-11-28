@@ -1,7 +1,6 @@
-# Example dhcpcd script.
+# dhcpcd service
 
-type = process
-command = /bin/busybox udhcpc -f
-logfile = /var/log/dinit/dhcpcd-service.log
-restart = false
-depends-on = rcboot
+type       = process
+command    = /usr/bin/dhcpcd -B -M -j /var/log/dhcpcd-service.log
+depends-on = early-rcboot
+logfile    = /var/log/dhcpcd.log

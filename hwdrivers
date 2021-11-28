@@ -1,3 +1,0 @@
-type = scripted
-command = /etc/dinit.d/hwdrivers.sh
-depends-on = modules

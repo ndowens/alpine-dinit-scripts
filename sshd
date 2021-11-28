@@ -1,7 +1,6 @@
-type = process
-smooth-recovery = true
-command = /usr/sbin/sshd -D
+# sshd service
 
-depends-on = loginready
-depends-on = rcboot
-waits-for = syslogd
+type            = process
+command         = /usr/bin/sshd -D
+depends-on      = ssh-keygen
+smooth-recovery = true

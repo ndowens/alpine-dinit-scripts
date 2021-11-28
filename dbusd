@@ -1,7 +1,0 @@
-# Dbus daemon.
-type = process
-command = /usr/bin/dbus-daemon --system --nofork --nopidfile --print-address=4
-depends-on = rcboot
-logfile = /var/log/dinit/dbus-daemon.log
-ready-notification = pipefd:4
-smooth-recovery = yes

@@ -1,5 +1,0 @@
-type = scripted
-command = /etc/dinit.d/mdev-hotplug.sh
-restart = false
-depends-on = early-filesystems
-depends-on = mdev

@@ -1,0 +1,11 @@
+# This is the primary Chimera service. It kicks in
+# as the first thing and takes care of the following:
+#
+# - starting the oneshots
+# - starting all services in the boot.d directory
+#
+
+depends-on  = early-static-devnodes
+depends-on  = login-ready
+
+waits-for.d = /etc/dinit.d/boot.d
