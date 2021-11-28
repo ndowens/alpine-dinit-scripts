@@ -1,0 +1,4 @@
+type	=	process
+command	=	/usr/bin/sddm
+logfile	=	/var/log/dinit/sddm.log
+waits-for =	loginready

@@ -1,0 +1,5 @@
+type      = scripted
+command   = /sbin/udevadm settle
+restart   = false
+waits-for = udevd
+waits-for = udev-trigger

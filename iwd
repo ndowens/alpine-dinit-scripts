@@ -1,6 +1,0 @@
-# iwd service
-
-type       = process
-command    = /usr/libexec/iwd
-depends-on = dbus
-logfile    = /var/log/iwd.log

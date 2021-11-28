@@ -1,0 +1,4 @@
+type       = scripted
+command    = /sbin/udevadm trigger --action=add
+restart    = false
+depends-on = udevd

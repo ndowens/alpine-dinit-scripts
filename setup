@@ -1,0 +1,7 @@
+type      = internal
+restart   = false
+waits-for = cleanup
+waits-for = binfmt
+waits-for = net-lo
+waits-for = sysctl
+waits-for = vconsole

@@ -1,8 +1,0 @@
-# dbus daemon service
-
-type               = process
-command            = /usr/libexec/dbus-daemon.wrapper --print-address=4
-depends-on         = early-rcboot
-logfile            = /var/log/dbus-daemon.log
-smooth-recovery    = true
-ready-notification = pipefd:4

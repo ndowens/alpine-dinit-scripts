@@ -1,0 +1,4 @@
+type	=	scripted
+restart	=	true
+command =	/etc/dinit.d/scripts/udhcpc
+waits-for =	mount-all

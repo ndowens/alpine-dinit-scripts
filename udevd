@@ -1,7 +1,6 @@
-# udev daemon service
-
-type               = process
-command            = /usr/libexec/udevd.wrapper
-depends-on         = early-rcboot
-logfile            = /var/log/udevd.log
-smooth-recovery    = true
+type            = scripted
+command         = /sbin/udevd --daemon
+stop-command    = /sbin/udevadm control -e
+restart         = false
+depends-on      = pseudofs
+waits-for       = kmod-static-nodes

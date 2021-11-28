@@ -1,0 +1,5 @@
+type       = internal
+restart    = false
+waits-for  = cgroups
+waits-for  = pseudofs
+waits-for  = tmpfs
